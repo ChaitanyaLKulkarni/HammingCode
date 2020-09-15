@@ -38,11 +38,11 @@ def calcParityBits(data, nosRedBits):
     # For finding rth parity bit, iterate over
     # 0 to r - 1
     for i in range(nosRedBits):
-        val = 0
+        val = 0  # 0 for even parity, 1 for odd parity
         for j in range(1, dataLen + 1):
 
             # If position has 1 in ith significant
-            # position then Bitwise X-OR the array value
+            # then Bitwise X-OR the array value
             # to find parity bit value.
             if(j & (2**i) == (2**i)):
                 val = val ^ int(data[-1 * j])
