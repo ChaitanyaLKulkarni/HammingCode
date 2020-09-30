@@ -17,5 +17,5 @@ Steps:
 
 * [Step 1](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L99).Set one random bit to flip.
 * [Step 2](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L58).Detect Error:
- * [Step 2.1](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L63).Calculate parity bits for given bits
- * [Step 2.2](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L75).It will give position of _Incorrect Bit_
+    * [Step 2.1](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L63).Calculate parity bits for given bits
+    * [Step 2.2](https://github.com/ChaitanyaLKulkarni/HammingCode/blob/master/hammingCode.py#L75).It will give position of _Incorrect Bit_
