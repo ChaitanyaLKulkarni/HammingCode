@@ -99,9 +99,16 @@ def main():
     arr[changedIndex] = '1' if arr[changedIndex] == '0' else '0'
     arr = "".join(arr)
     print("Error Data is " + arr)
+    # detect the position of error bit
     correction = detectError(arr, nosRedBits)
+    # compare detected error with what we actually created
     print("The position of error is " + str(correction) +
-          "\n Changed Bit index : " + str(len(arr) - changedIndex))
+          "\t Changed Bit index : " + str(len(arr) - changedIndex))
+
+    correction = len(arr) - correction
+    # correct and print
+    newValue = '1' if arr[correction] == '0' else '0'
+    print("Corrected : " + arr[:correction-1] + newValue + arr[correction+1:])
 
 
 if __name__ == "__main__":
